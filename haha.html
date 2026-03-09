@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#1e3c72,#2a5298,#6dd5ed,#2193b0);
+background-size:400% 400%;
+animation:bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.profile-card{
+background:white;
+padding:30px;
+width:320px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.profile-img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:15px;
+transition:0.4s;
+}
+
+.profile-img:hover{
+transform:scale(1.1) rotate(5deg);
+}
+
+h1{
+font-size:24px;
+margin-bottom:5px;
+}
+
+h3{
+color:gray;
+margin-bottom:15px;
+}
+
+.bio{
+font-size:14px;
+margin-bottom:20px;
+}
+
+.buttons a{
+text-decoration:none;
+padding:10px 20px;
+margin:5px;
+display:inline-block;
+border-radius:20px;
+background:#2a5298;
+color:white;
+transition:0.3s;
+}
+
+.buttons a:hover{
+background:#1e3c72;
+transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+<img src="https://i.imgur.com/2DhmtJ4.png" class="profile-img">
+
+<h1>Johnrex Canta</h1>
+<h3>Future Game Developer</h3>
+
+<p class="bio">
+Second year student who loves playing games and basketball. 
+Dream job is to become a game developer.
+</p>
+
+<div class="buttons">
+<a href="#">Facebook</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</body>
+</html>
